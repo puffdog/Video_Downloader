@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Download copyright-free videos">
+    <title>Video Downloader</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Video Downloader</h1>
+        <p>Paste a video URL from YouTube or other supported platforms.</p>
+        <form id="downloadForm" action="/download" method="POST">
+            <input type="url" name="videoLink" id="videoLink" placeholder="Enter video URL here" required>
+            <button type="submit">Download</button>
+        </form>
+        <p id="message"></p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Free Video Downloader - For public domain & copyright-free videos only.</p>
+    </div>
+</body>
+</html>
